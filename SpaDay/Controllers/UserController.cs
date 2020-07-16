@@ -27,6 +27,8 @@ namespace SpaDay.Controllers
                 ViewBag.error = false;
                 ViewBag.userName = newUser.Username;
                 ViewBag.email = newUser.Email;
+                ViewBag.createdTime = newUser.CreatedTime;
+                //Console.WriteLine(newUser.CreatedTime);
                 return View("Index");
             }
             ViewBag.error = true;
